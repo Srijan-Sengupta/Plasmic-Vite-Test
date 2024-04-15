@@ -1,9 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
 
-import Homepage from "./components/Homepage"
-import './App.css'
+import LoginPage from "./components/LoginPage";
+import Homepage from "./components/Homepage";
+import SignupPage from "./components/SignupPage"
+
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 /*function App() {
   const [count, setCount] = useState(0)
@@ -34,10 +38,16 @@ import './App.css'
   )
 }*/
 
-function App(){
+function App() {
 	return (
-			<Homepage/>
-	)
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" exact element={<Homepage />} />
+				<Route path="/login" element={<LoginPage state="unnamedGroupOfVariants2"/>}/>
+				<Route path="/signup" element={<SignupPage/>}/>
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
-export default App
+export default App;

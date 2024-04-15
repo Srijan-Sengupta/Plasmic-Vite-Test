@@ -137,43 +137,43 @@ function PlasmicCompanyName__RenderFunc(props) {
         {...child$Props}
       >
         <FormItemWrapper
-          className={classNames("__wab_instance", sty.formField__q9Wx7)}
+          className={classNames("__wab_instance", sty.formField__tSyDo)}
           label={"First name"}
           rules={[{ ruleType: "required" }]}
         >
           <AntdInput
-            className={classNames("__wab_instance", sty.input__tyOtx)}
+            className={classNames("__wab_instance", sty.input__dvv0B)}
           />
         </FormItemWrapper>
         <FormItemWrapper
-          className={classNames("__wab_instance", sty.formField__vad4)}
+          className={classNames("__wab_instance", sty.formField__ku9Of)}
           label={"Last Name"}
           rules={[{ ruleType: "required" }]}
         >
           <AntdInput
-            className={classNames("__wab_instance", sty.input__xBeEp)}
+            className={classNames("__wab_instance", sty.input__bGp7F)}
           />
         </FormItemWrapper>
         <FormItemWrapper
-          className={classNames("__wab_instance", sty.formField__oxZkw)}
+          className={classNames("__wab_instance", sty.formField___9HV9S)}
           label={"Password"}
           rules={[{ ruleType: "required" }, { ruleType: "min", length: 8 }]}
         >
           <AntdPassword
-            className={classNames("__wab_instance", sty.passwordInput__wE30F)}
+            className={classNames("__wab_instance", sty.passwordInput__jXikR)}
           />
         </FormItemWrapper>
         <FormItemWrapper
-          className={classNames("__wab_instance", sty.formField__cLwYg)}
+          className={classNames("__wab_instance", sty.formField__vZf0J)}
           label={"Re enter password"}
           rules={[{ ruleType: "required" }, { ruleType: "min", length: 8 }]}
         >
           <AntdPassword
-            className={classNames("__wab_instance", sty.passwordInput__a62Ry)}
+            className={classNames("__wab_instance", sty.passwordInput___5RSdb)}
           />
         </FormItemWrapper>
         <FormItemWrapper
-          className={classNames("__wab_instance", sty.formField__kGcjE)}
+          className={classNames("__wab_instance", sty.formField___1GIon)}
           label={"Date of Birth"}
           rules={[{ ruleType: "required" }]}
         >

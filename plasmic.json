@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "inlined",
@@ -45,7 +45,8 @@
           }
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -67,7 +68,8 @@
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -467,7 +469,8 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -489,7 +492,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "414xL5G8mL1Z1RMz34t6rd",
@@ -591,6 +595,19 @@
             "modulePath": "CompanyName.jsx"
           },
           "cssFilePath": "plasmic/mployee/PlasmicCompanyName.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "LZBx-a4pO3ep",
+          "name": "DropdownButton",
+          "type": "managed",
+          "projectId": "414xL5G8mL1Z1RMz34t6rd",
+          "renderModuleFilePath": "plasmic/mployee/PlasmicDropdownButton.jsx",
+          "importSpec": {
+            "modulePath": "DropdownButton.jsx"
+          },
+          "cssFilePath": "plasmic/mployee/PlasmicDropdownButton.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

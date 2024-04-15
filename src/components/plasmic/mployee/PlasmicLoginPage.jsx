@@ -35,9 +35,7 @@ import sty from "./PlasmicLoginPage.module.css"; // plasmic-import: dPoyJMDGAOpt
 
 createPlasmicElementProxy;
 
-export const PlasmicLoginPage__VariantProps = new Array(
-  "unnamedGroupOfVariants2"
-);
+export const PlasmicLoginPage__VariantProps = new Array("vars");
 
 export const PlasmicLoginPage__ArgProps = new Array();
 
@@ -73,11 +71,10 @@ function PlasmicLoginPage__RenderFunc(props) {
         onMutate: generateOnMutateForSpec("isSubmitting", FormWrapper_Helpers)
       },
       {
-        path: "unnamedGroupOfVariants2",
+        path: "vars",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) =>
-          $props.unnamedGroupOfVariants2
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.vars
       }
     ],
 
@@ -106,8 +103,11 @@ function PlasmicLoginPage__RenderFunc(props) {
             plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.mpolyeeLogin,
             {
-              [sty.mpolyeeLoginunnamedGroupOfVariants2_unnamedVariant]:
-                hasVariant($state, "unnamedGroupOfVariants2", "unnamedVariant")
+              [sty.mpolyeeLoginvars_recruiterVar]: hasVariant(
+                $state,
+                "vars",
+                "recruiterVar"
+              )
             }
           )}
         >
@@ -120,15 +120,15 @@ function PlasmicLoginPage__RenderFunc(props) {
               projectcss.__wab_text,
               sty.h1,
               {
-                [sty.h1unnamedGroupOfVariants2_unnamedVariant]: hasVariant(
+                [sty.h1vars_recruiterVar]: hasVariant(
                   $state,
-                  "unnamedGroupOfVariants2",
-                  "unnamedVariant"
+                  "vars",
+                  "recruiterVar"
                 )
               }
             )}
           >
-            {hasVariant($state, "unnamedGroupOfVariants2", "unnamedVariant")
+            {hasVariant($state, "vars", "recruiterVar")
               ? "Login As An Recruiter"
               : "Login As An Applicant"}
           </h1>
@@ -221,7 +221,7 @@ function PlasmicLoginPage__RenderFunc(props) {
                   <FormItemWrapper
                     className={classNames(
                       "__wab_instance",
-                      sty.formField__lBk17
+                      sty.formField__rJdws
                     )}
                     label={"Username/phone no/email id"}
                     name={"name"}
@@ -234,7 +234,7 @@ function PlasmicLoginPage__RenderFunc(props) {
                   <FormItemWrapper
                     className={classNames(
                       "__wab_instance",
-                      sty.formField__ewbCw
+                      sty.formField__rQ2Jj
                     )}
                     label={"password"}
                     name={``}

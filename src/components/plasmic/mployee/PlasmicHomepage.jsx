@@ -13,15 +13,11 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants,
   useCurrentUser,
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import NavBar from "../../NavBar"; // plasmic-import: XOHEMOrDK2Yf/component
-import { AntdBreadcrumb } from "@plasmicpkgs/antd5/skinny/registerBreadcrumb";
-import { AntdBreadcrumbItem } from "@plasmicpkgs/antd5/skinny/registerBreadcrumb";
-import { useScreenVariants as useScreenVariantspes9KtcBPvuU } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: pes9ktcBPvuU/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: 414xL5G8mL1Z1RMz34t6rd/projectcss
@@ -64,9 +60,6 @@ function PlasmicHomepage__RenderFunc(props) {
     $queries: {},
     $refs
   });
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantspes9KtcBPvuU()
-  });
   return (
     <React.Fragment>
       <div
@@ -90,80 +83,13 @@ function PlasmicHomepage__RenderFunc(props) {
           className={classNames("__wab_instance", sty.welcomeBar)}
         />
 
-        <AntdBreadcrumb
-          data-plasmic-name={"breadcrumb"}
-          data-plasmic-override={overrides.breadcrumb}
-          className={classNames("__wab_instance", sty.breadcrumb)}
-          itemsRaw={
-            <React.Fragment>
-              <AntdBreadcrumbItem
-                className={classNames(
-                  "__wab_instance",
-                  sty.breadcrumbItem__o5G7V
-                )}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__x83D
-                  )}
-                >
-                  {"First"}
-                </div>
-              </AntdBreadcrumbItem>
-              <AntdBreadcrumbItem
-                className={classNames(
-                  "__wab_instance",
-                  sty.breadcrumbItem___29Nni
-                )}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gQi4
-                  )}
-                >
-                  {"Second"}
-                </div>
-              </AntdBreadcrumbItem>
-              <AntdBreadcrumbItem
-                className={classNames(
-                  "__wab_instance",
-                  sty.breadcrumbItem___2LfZq
-                )}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__yJ9Vr
-                  )}
-                >
-                  {"Third"}
-                </div>
-              </AntdBreadcrumbItem>
-            </React.Fragment>
-          }
-          separator={
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__jcA7
-              )}
-            >
-              {"/"}
-            </div>
-          }
-        />
-
         <div
+          data-plasmic-name={"text"}
+          data-plasmic-override={overrides.text}
           className={classNames(
             projectcss.all,
             projectcss.__wab_text,
-            sty.text__cqX5
+            sty.text
           )}
         >
           <React.Fragment>
@@ -198,9 +124,9 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "welcomeBar", "breadcrumb", "blockquote"],
+  root: ["root", "welcomeBar", "text", "blockquote"],
   welcomeBar: ["welcomeBar"],
-  breadcrumb: ["breadcrumb"],
+  text: ["text", "blockquote"],
   blockquote: ["blockquote"]
 };
 
@@ -237,7 +163,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     welcomeBar: makeNodeComponent("welcomeBar"),
-    breadcrumb: makeNodeComponent("breadcrumb"),
+    text: makeNodeComponent("text"),
     blockquote: makeNodeComponent("blockquote"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

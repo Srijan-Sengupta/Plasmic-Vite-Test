@@ -23,7 +23,7 @@
 .mpolyeeLogin > * {
   grid-column: 4;
 }
-.mpolyeeLoginunnamedGroupOfVariants2_unnamedVariant > * {
+.mpolyeeLoginvars_recruiterVar > * {
   grid-column: 4;
 }
 .h1 {
@@ -67,7 +67,7 @@
   padding: 8%;
   margin: 0px;
 }
-.formField__lBk17:global(.__wab_instance) {
+.formField__rJdws:global(.__wab_instance) {
   width: 100%;
   margin-bottom: 24px;
   min-width: 0;
@@ -76,7 +76,7 @@
   max-width: 100%;
   object-fit: cover;
 }
-.formField__ewbCw:global(.__wab_instance) {
+.formField__rQ2Jj:global(.__wab_instance) {
   width: 100%;
   margin-bottom: 24px;
   min-width: 0;

@@ -129,413 +129,395 @@ function PlasmicSignupPage__RenderFunc(props) {
           )}
         >
           <Reveal
-            className={classNames("__wab_instance", sty.reveal__gussY, {
-              [sty.revealunnamedVariant__gussYvSyNl]: hasVariant(
-                $state,
-                "unnamedVariant",
-                "unnamedVariant"
-              )
-            })}
+            className={classNames("__wab_instance", sty.reveal___0CRix)}
             triggerOnce={true}
           >
-            <Reveal
-              className={classNames("__wab_instance", sty.reveal__ygQ7H)}
-              triggerOnce={true}
-            >
-              {(() => {
-                const child$Props = {
-                  className: classNames("__wab_instance", sty.form, {
-                    [sty.formunnamedVariant]: hasVariant(
-                      $state,
-                      "unnamedVariant",
-                      "unnamedVariant"
-                    )
-                  }),
-                  extendedOnValuesChange:
-                    generateStateOnChangePropForCodeComponents(
-                      $state,
-                      "value",
-                      ["form", "value"],
-                      FormWrapper_Helpers
-                    ),
-                  formItems: undefined,
-                  labelCol: { span: 8, horizontalOnly: true },
-                  layout: "horizontal",
-                  mode: undefined,
-                  onIsSubmittingChange:
-                    generateStateOnChangePropForCodeComponents(
-                      $state,
-                      "isSubmitting",
-                      ["form", "isSubmitting"],
-                      FormWrapper_Helpers
-                    ),
-                  ref: ref => {
-                    $refs["form"] = ref;
+            {(() => {
+              const child$Props = {
+                className: classNames("__wab_instance", sty.form, {
+                  [sty.formunnamedVariant]: hasVariant(
+                    $state,
+                    "unnamedVariant",
+                    "unnamedVariant"
+                  )
+                }),
+                extendedOnValuesChange:
+                  generateStateOnChangePropForCodeComponents(
+                    $state,
+                    "value",
+                    ["form", "value"],
+                    FormWrapper_Helpers
+                  ),
+                formItems: undefined,
+                labelCol: { span: 8, horizontalOnly: true },
+                layout: "horizontal",
+                mode: undefined,
+                onIsSubmittingChange:
+                  generateStateOnChangePropForCodeComponents(
+                    $state,
+                    "isSubmitting",
+                    ["form", "isSubmitting"],
+                    FormWrapper_Helpers
+                  ),
+                ref: ref => {
+                  $refs["form"] = ref;
+                },
+                wrapperCol: { span: 16, horizontalOnly: true }
+              };
+              initializeCodeComponentStates(
+                $state,
+                [
+                  {
+                    name: "value",
+                    plasmicStateName: "form.value"
                   },
-                  wrapperCol: { span: 16, horizontalOnly: true }
-                };
-                initializeCodeComponentStates(
-                  $state,
-                  [
-                    {
-                      name: "value",
-                      plasmicStateName: "form.value"
-                    },
-                    {
-                      name: "isSubmitting",
-                      plasmicStateName: "form.isSubmitting"
-                    }
-                  ],
+                  {
+                    name: "isSubmitting",
+                    plasmicStateName: "form.isSubmitting"
+                  }
+                ],
 
-                  [],
-                  FormWrapper_Helpers ?? {},
-                  child$Props
-                );
-                return (
-                  <FormWrapper
-                    data-plasmic-name={"form"}
-                    data-plasmic-override={overrides.form}
-                    {...child$Props}
+                [],
+                FormWrapper_Helpers ?? {},
+                child$Props
+              );
+              return (
+                <FormWrapper
+                  data-plasmic-name={"form"}
+                  data-plasmic-override={overrides.form}
+                  {...child$Props}
+                >
+                  <FormItemWrapper
+                    className={classNames(
+                      "__wab_instance",
+                      sty.formField__olsGu
+                    )}
+                    label={"First Name"}
+                    rules={[{ ruleType: "required" }]}
                   >
-                    <FormItemWrapper
+                    <AntdInput
+                      className={classNames("__wab_instance", sty.input__aeM1B)}
+                    />
+                  </FormItemWrapper>
+                  <FormItemWrapper
+                    className={classNames(
+                      "__wab_instance",
+                      sty.formField__ox3Fu
+                    )}
+                    label={"Last Name"}
+                    rules={[{ ruleType: "required" }]}
+                  >
+                    <AntdInput
+                      className={classNames("__wab_instance", sty.input__gGqpq)}
+                    />
+                  </FormItemWrapper>
+                  <FormItemWrapper
+                    className={classNames(
+                      "__wab_instance",
+                      sty.formField__gsk2N
+                    )}
+                    label={"Email"}
+                    rules={[
+                      { ruleType: "required" },
+                      {
+                        ruleType: "enum",
+                        options: (() => {
+                          const __composite = [{ value: null }];
+                          __composite["0"]["value"] = "@";
+                          return __composite;
+                        })(),
+                        message: "unvalid email"
+                      }
+                    ]}
+                  >
+                    <AntdInput
+                      className={classNames("__wab_instance", sty.input__iHxtn)}
+                    />
+                  </FormItemWrapper>
+                  <FormItemWrapper
+                    className={classNames(
+                      "__wab_instance",
+                      sty.formField__xEvj
+                    )}
+                    label={"Password"}
+                    rules={[
+                      { ruleType: "required" },
+                      { ruleType: "min", length: 8 }
+                    ]}
+                  >
+                    <AntdPassword
                       className={classNames(
                         "__wab_instance",
-                        sty.formField__rZUn0
+                        sty.passwordInput__dj50O
                       )}
-                      label={"First Name"}
-                      rules={[{ ruleType: "required" }]}
-                    >
-                      <AntdInput
-                        className={classNames(
-                          "__wab_instance",
-                          sty.input__ggXKb
-                        )}
-                      />
-                    </FormItemWrapper>
-                    <FormItemWrapper
+                    />
+                  </FormItemWrapper>
+                  <FormItemWrapper
+                    className={classNames(
+                      "__wab_instance",
+                      sty.formField___74LuJ
+                    )}
+                    label={"Re enter password"}
+                    rules={[
+                      { ruleType: "required" },
+                      { ruleType: "min", length: 8 }
+                    ]}
+                  >
+                    <AntdPassword
                       className={classNames(
                         "__wab_instance",
-                        sty.formField__rrZhF
+                        sty.passwordInput__enRqN
                       )}
-                      label={"Last Name"}
-                      rules={[{ ruleType: "required" }]}
-                    >
-                      <AntdInput
-                        className={classNames(
-                          "__wab_instance",
-                          sty.input__f9ELf
-                        )}
-                      />
-                    </FormItemWrapper>
-                    <FormItemWrapper
+                    />
+                  </FormItemWrapper>
+                  <FormItemWrapper
+                    className={classNames(
+                      "__wab_instance",
+                      sty.formField__gN5Zh
+                    )}
+                    label={"Date of birth"}
+                    rules={[{ ruleType: "required" }]}
+                  >
+                    <AntdDatePicker
                       className={classNames(
                         "__wab_instance",
-                        sty.formField__laWqx
+                        sty.dateTimePicker__rjJg
                       )}
-                      label={"Email"}
-                      rules={[
-                        { ruleType: "required" },
-                        {
-                          ruleType: "enum",
-                          options: (() => {
-                            const __composite = [{ value: null }];
-                            __composite["0"]["value"] = "@";
-                            return __composite;
-                          })(),
-                          message: "unvalid email"
-                        }
-                      ]}
-                    >
-                      <AntdInput
-                        className={classNames(
-                          "__wab_instance",
-                          sty.input___8OmHl
-                        )}
-                      />
-                    </FormItemWrapper>
-                    <FormItemWrapper
+                      popupScopeClassName={
+                        sty["dateTimePicker__rjJg__datePickerPopup"]
+                      }
+                    />
+                  </FormItemWrapper>
+                  <AntdButton
+                    className={classNames("__wab_instance", sty.button__z5OXv)}
+                    submitsForm={true}
+                    type={"default"}
+                  >
+                    <div
                       className={classNames(
-                        "__wab_instance",
-                        sty.formField__nEbXs
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___2XByG
                       )}
-                      label={"Password"}
-                      rules={[
-                        { ruleType: "required" },
-                        { ruleType: "min", length: 8 }
-                      ]}
                     >
-                      <AntdPassword
-                        className={classNames(
-                          "__wab_instance",
-                          sty.passwordInput___8PRq2
-                        )}
-                      />
-                    </FormItemWrapper>
-                    <FormItemWrapper
-                      className={classNames(
-                        "__wab_instance",
-                        sty.formField__u66XO
-                      )}
-                      label={"Re enter password"}
-                      rules={[
-                        { ruleType: "required" },
-                        { ruleType: "min", length: 8 }
-                      ]}
-                    >
-                      <AntdPassword
-                        className={classNames(
-                          "__wab_instance",
-                          sty.passwordInput__sxx4
-                        )}
-                      />
-                    </FormItemWrapper>
-                    <FormItemWrapper
-                      className={classNames(
-                        "__wab_instance",
-                        sty.formField__w9L27
-                      )}
-                      label={"Date of birth"}
-                      rules={[{ ruleType: "required" }]}
-                    >
-                      <AntdDatePicker
-                        className={classNames(
-                          "__wab_instance",
-                          sty.dateTimePicker__ch8L
-                        )}
-                        popupScopeClassName={
-                          sty["dateTimePicker__ch8L__datePickerPopup"]
-                        }
-                      />
-                    </FormItemWrapper>
-                    <AntdButton
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__lvOqD
-                      )}
-                      submitsForm={true}
-                      type={"default"}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___2NDaQ
-                        )}
-                      >
-                        {"Submit"}
-                      </div>
-                    </AntdButton>
-                  </FormWrapper>
-                );
-              })()}
-              {(
-                hasVariant($state, "unnamedVariant", "unnamedVariant")
-                  ? true
-                  : false
-              )
-                ? (() => {
-                    const child$Props = {
-                      className: classNames("__wab_instance", sty.form2, {
-                        [sty.form2unnamedVariant]: hasVariant(
-                          $state,
-                          "unnamedVariant",
-                          "unnamedVariant"
-                        )
-                      }),
-                      extendedOnValuesChange:
-                        generateStateOnChangePropForCodeComponents(
-                          $state,
-                          "value",
-                          ["form2", "value"],
-                          FormWrapper_Helpers
-                        ),
-                      formItems: undefined,
-                      labelCol: { span: 8, horizontalOnly: true },
-                      layout: "horizontal",
-                      mode: undefined,
-                      onIsSubmittingChange:
-                        generateStateOnChangePropForCodeComponents(
-                          $state,
-                          "isSubmitting",
-                          ["form2", "isSubmitting"],
-                          FormWrapper_Helpers
-                        ),
-                      ref: ref => {
-                        $refs["form2"] = ref;
+                      {"Submit"}
+                    </div>
+                  </AntdButton>
+                </FormWrapper>
+              );
+            })()}
+          </Reveal>
+          <Reveal
+            className={classNames("__wab_instance", sty.reveal___18KjJ)}
+            triggerOnce={true}
+          >
+            {(
+              hasVariant($state, "unnamedVariant", "unnamedVariant")
+                ? true
+                : false
+            )
+              ? (() => {
+                  const child$Props = {
+                    className: classNames("__wab_instance", sty.form2, {
+                      [sty.form2unnamedVariant]: hasVariant(
+                        $state,
+                        "unnamedVariant",
+                        "unnamedVariant"
+                      )
+                    }),
+                    extendedOnValuesChange:
+                      generateStateOnChangePropForCodeComponents(
+                        $state,
+                        "value",
+                        ["form2", "value"],
+                        FormWrapper_Helpers
+                      ),
+                    formItems: undefined,
+                    labelCol: { span: 8, horizontalOnly: true },
+                    layout: "horizontal",
+                    mode: undefined,
+                    onIsSubmittingChange:
+                      generateStateOnChangePropForCodeComponents(
+                        $state,
+                        "isSubmitting",
+                        ["form2", "isSubmitting"],
+                        FormWrapper_Helpers
+                      ),
+                    ref: ref => {
+                      $refs["form2"] = ref;
+                    },
+                    wrapperCol: { span: 16, horizontalOnly: true }
+                  };
+                  initializeCodeComponentStates(
+                    $state,
+                    [
+                      {
+                        name: "value",
+                        plasmicStateName: "form2.value"
                       },
-                      wrapperCol: { span: 16, horizontalOnly: true }
-                    };
-                    initializeCodeComponentStates(
-                      $state,
-                      [
-                        {
-                          name: "value",
-                          plasmicStateName: "form2.value"
-                        },
-                        {
-                          name: "isSubmitting",
-                          plasmicStateName: "form2.isSubmitting"
-                        }
-                      ],
+                      {
+                        name: "isSubmitting",
+                        plasmicStateName: "form2.isSubmitting"
+                      }
+                    ],
 
-                      [],
-                      FormWrapper_Helpers ?? {},
-                      child$Props
-                    );
-                    return (
-                      <FormWrapper
-                        data-plasmic-name={"form2"}
-                        data-plasmic-override={overrides.form2}
-                        {...child$Props}
+                    [],
+                    FormWrapper_Helpers ?? {},
+                    child$Props
+                  );
+                  return (
+                    <FormWrapper
+                      data-plasmic-name={"form2"}
+                      data-plasmic-override={overrides.form2}
+                      {...child$Props}
+                    >
+                      <FormItemWrapper
+                        className={classNames(
+                          "__wab_instance",
+                          sty.formField__tTMyk
+                        )}
+                        label={"First Name"}
+                        rules={[{ ruleType: "required" }]}
                       >
-                        <FormItemWrapper
+                        <AntdInput
                           className={classNames(
                             "__wab_instance",
-                            sty.formField__qcVAi
+                            sty.input___63J8H
                           )}
-                          label={"First Name"}
-                          rules={[{ ruleType: "required" }]}
-                        >
-                          <AntdInput
-                            className={classNames(
-                              "__wab_instance",
-                              sty.input__ldTOl
-                            )}
-                          />
-                        </FormItemWrapper>
-                        <FormItemWrapper
+                        />
+                      </FormItemWrapper>
+                      <FormItemWrapper
+                        className={classNames(
+                          "__wab_instance",
+                          sty.formField__fz6ZZ
+                        )}
+                        label={"Last Name"}
+                        rules={[{ ruleType: "required" }]}
+                      >
+                        <AntdInput
                           className={classNames(
                             "__wab_instance",
-                            sty.formField__iIv67
+                            sty.input__f5Kf0
                           )}
-                          label={"Last Name"}
-                          rules={[{ ruleType: "required" }]}
-                        >
-                          <AntdInput
-                            className={classNames(
-                              "__wab_instance",
-                              sty.input__z93W5
-                            )}
-                          />
-                        </FormItemWrapper>
-                        <FormItemWrapper
+                        />
+                      </FormItemWrapper>
+                      <FormItemWrapper
+                        className={classNames(
+                          "__wab_instance",
+                          sty.formField__eV8Do
+                        )}
+                        label={"Email"}
+                        rules={[
+                          { ruleType: "required" },
+                          {
+                            ruleType: "enum",
+                            options: (() => {
+                              const __composite = [{ value: null }];
+                              __composite["0"]["value"] = "@";
+                              return __composite;
+                            })(),
+                            message: "unvalid email"
+                          }
+                        ]}
+                      >
+                        <AntdInput
                           className={classNames(
                             "__wab_instance",
-                            sty.formField__zIcn
+                            sty.input__a9Gq
                           )}
-                          label={"Email"}
-                          rules={[
-                            { ruleType: "required" },
-                            {
-                              ruleType: "enum",
-                              options: (() => {
-                                const __composite = [{ value: null }];
-                                __composite["0"]["value"] = "@";
-                                return __composite;
-                              })(),
-                              message: "unvalid email"
-                            }
-                          ]}
-                        >
-                          <AntdInput
-                            className={classNames(
-                              "__wab_instance",
-                              sty.input__o08N2
-                            )}
-                          />
-                        </FormItemWrapper>
-                        <FormItemWrapper
+                        />
+                      </FormItemWrapper>
+                      <FormItemWrapper
+                        className={classNames(
+                          "__wab_instance",
+                          sty.formField__ycmIk
+                        )}
+                        label={"Password"}
+                        rules={[
+                          { ruleType: "required" },
+                          { ruleType: "min", length: 8 }
+                        ]}
+                      >
+                        <AntdPassword
                           className={classNames(
                             "__wab_instance",
-                            sty.formField__r9PS2
+                            sty.passwordInput___3TzqX
                           )}
-                          label={"Password"}
-                          rules={[
-                            { ruleType: "required" },
-                            { ruleType: "min", length: 8 }
-                          ]}
-                        >
-                          <AntdPassword
-                            className={classNames(
-                              "__wab_instance",
-                              sty.passwordInput__ytOgz
-                            )}
-                          />
-                        </FormItemWrapper>
-                        <FormItemWrapper
+                        />
+                      </FormItemWrapper>
+                      <FormItemWrapper
+                        className={classNames(
+                          "__wab_instance",
+                          sty.formField__ra7Pg
+                        )}
+                        label={"Re enter password"}
+                        rules={[
+                          { ruleType: "required" },
+                          { ruleType: "min", length: 8 }
+                        ]}
+                      >
+                        <AntdPassword
                           className={classNames(
                             "__wab_instance",
-                            sty.formField__pfcj9
+                            sty.passwordInput__avrVn
                           )}
-                          label={"Re enter password"}
-                          rules={[
-                            { ruleType: "required" },
-                            { ruleType: "min", length: 8 }
-                          ]}
-                        >
-                          <AntdPassword
-                            className={classNames(
-                              "__wab_instance",
-                              sty.passwordInput__mlxc9
-                            )}
-                          />
-                        </FormItemWrapper>
-                        <FormItemWrapper
+                        />
+                      </FormItemWrapper>
+                      <FormItemWrapper
+                        className={classNames(
+                          "__wab_instance",
+                          sty.formField__fBnkC
+                        )}
+                        label={"Date of birth"}
+                        rules={[{ ruleType: "required" }]}
+                      >
+                        <AntdDatePicker
                           className={classNames(
                             "__wab_instance",
-                            sty.formField__cyEfQ
+                            sty.dateTimePicker__synpw
                           )}
-                          label={"Date of birth"}
-                          rules={[{ ruleType: "required" }]}
-                        >
-                          <AntdDatePicker
-                            className={classNames(
-                              "__wab_instance",
-                              sty.dateTimePicker___8Ehvx
-                            )}
-                            popupScopeClassName={
-                              sty["dateTimePicker___8Ehvx__datePickerPopup"]
-                            }
-                          />
-                        </FormItemWrapper>
-                        <FormItemWrapper
+                          popupScopeClassName={
+                            sty["dateTimePicker__synpw__datePickerPopup"]
+                          }
+                        />
+                      </FormItemWrapper>
+                      <FormItemWrapper
+                        className={classNames(
+                          "__wab_instance",
+                          sty.formField__pGgl7
+                        )}
+                        label={"Company name"}
+                        rules={[{ ruleType: "required" }]}
+                      >
+                        <AntdInput
                           className={classNames(
                             "__wab_instance",
-                            sty.formField__o4Ojf
+                            sty.input__alSh
                           )}
-                          label={"Company name"}
-                          rules={[{ ruleType: "required" }]}
-                        >
-                          <AntdInput
-                            className={classNames(
-                              "__wab_instance",
-                              sty.input__lFtT
-                            )}
-                          />
-                        </FormItemWrapper>
-                        <AntdButton
+                        />
+                      </FormItemWrapper>
+                      <AntdButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__yYuTt
+                        )}
+                        submitsForm={true}
+                        type={"default"}
+                      >
+                        <div
                           className={classNames(
-                            "__wab_instance",
-                            sty.button__uxtTb
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__wucFx
                           )}
-                          submitsForm={true}
-                          type={"default"}
                         >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__zwaEv
-                            )}
-                          >
-                            {"Submit"}
-                          </div>
-                        </AntdButton>
-                      </FormWrapper>
-                    );
-                  })()
-                : null}
-            </Reveal>
+                          {"Submit"}
+                        </div>
+                      </AntdButton>
+                    </FormWrapper>
+                  );
+                })()
+              : null}
           </Reveal>
         </div>
       </div>
