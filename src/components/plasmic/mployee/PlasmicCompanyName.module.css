@@ -1,0 +1,67 @@
+.form:global(.__wab_instance) {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  background: none;
+  position: relative;
+  padding: 8%;
+}
+.formField__q9Wx7:global(.__wab_instance) {
+  width: 100%;
+  margin-bottom: 24px;
+  min-width: 0;
+}
+.input__tyOtx:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.formField__vad4:global(.__wab_instance) {
+  width: 100%;
+  margin-bottom: 24px;
+  min-width: 0;
+}
+.input__xBeEp:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.formField__oxZkw:global(.__wab_instance) {
+  width: 100%;
+  margin-bottom: 24px;
+  min-width: 0;
+}
+.passwordInput__wE30F:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.formField__cLwYg:global(.__wab_instance) {
+  width: 100%;
+  margin-bottom: 24px;
+  min-width: 0;
+}
+.passwordInput__a62Ry:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.formField__kGcjE:global(.__wab_instance) {
+  width: 100%;
+  margin-bottom: 24px;
+  min-width: 0;
+}
+.dateTimePicker:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.button:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
